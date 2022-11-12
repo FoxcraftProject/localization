@@ -1,0 +1,1255 @@
+# Config generated with MultiLang v1.7.1
+
+prefix: "§8[§9MultiLang§8] §r"
+
+# Enable debug
+debug:
+  default: false
+
+# Storage types: FILE, MYSQL
+storage: "FILE"
+mysql:
+  # Database information
+  ip: ""
+  port: 3306
+  username: ""
+  password: ""
+  database: ""
+  ssl: false
+
+default: "english"
+
+default-base: "jIR4FRlXbuE0rTxivt6D5XZ3AZha9SQDmNS49pubg1SSkOd7LaBC4qCJPsudfnvc/C63F5GBKPaNObRXVcFY1QRwk3PO5nQVYnNBbUzK7msudnsoz6eMzzDGUXZw1I4O0HexGU85JlaPw6mt6eBtGq8Mye+5qBrS9i3wTFJmoALTZXMMBG8zQOGUul7cVELX9DF0O6eLrb0r/GMoq+kwTXIQwzFjE8+HG+sNZBziLJfF9Tb03gb6r8AOM3/yiwXuABwCtXFvA1k87MwTfwJ3+dxT0dStGHgYlVEnAUMZ7H1Zayqgaht+WGQ2eY0laYtvj5xR0isELzNFBT5mNmr1PQPdtzDds+BCbIn4AU8NDxGcR2Q2LBYzjmvjt9tU0plARv/JoZ0wpxKBs/zxlqzKBTxmJ2Y9CvvR+vGy0qYIZV2EiYFVeBp+Jc0gZo/VAmlPlJk8EFFI/fxwff/nQucxJdf6OOSBrSz7B/tboe3aJKVvK9k1C7rr/R6xnjoHYSrs44IApLP9G28QpIsIIS9nD0Y4Wo+WXFLE/73XgINkN11mF0wfQFdKgz7sN6FZl5B5pCDpZUY+DVvnxtInXCFSpgNM6DZcGruvAOQHc3aYSTNO+/ZwFCOAT/KYLEBPD5aon2V3TDWjL70JvcAUnvxO5I3NDNnZLrGTQ+EIZG/0dfQ="
+
+# You can view a documentation for the autodetector here: https://wiki.lorenzo0111.me/multilang/configuration#how-does-the-autodetect-work
+languages:
+  english: "en_us"
+  deutsch_be: "de_DE"
+  deutsch: "de_de"
+#  russian: "ru_ru"
+#  russian_be: "ru_RU"
+#  espanol: "es_es"
+
+# RealTime is a feature that allows you to automatically translate chat message to the player language with a configurable translator api
+real-time:
+  enabled: false # Set to true to enable the feature
+  cache: true # Cache the translated messages in the database for faster translations
+  api: "bing" # Available translation apis: bing, google. You can register a new one with our api.
+  key: "" # The api key for the selected api. Needed for Bing(By RapidAPI). If you need help creating a key for free join our discord server https://discord.io/RocketPlugins
+  ignore: # List of regex to not translate
+    - "-ignore [a-zA-Z]+"
+
+# Warning: This feature is still experimental. It may not work with some languages.
+auto-detect: true
+
+# This section is for placeholders %multilang_identifier%
+strings:
+#  0:
+#    identifier: ""
+#    default: ""
+#    locales:
+#      english: ""
+#      deutsch: ""
+#      deutsch_be: ""
+#      russian: ""
+#      russian_be: ""
+#+++++ GDPR +++++ #
+  1:
+    identifier: "gdpr_privacy_policy"
+    default: "Terms of Service"
+    locales:
+      english: "Terms of Service"
+      deutsch: "Nutzungsbedingungen"
+      deutsch_be: "Nutzungsbedingungen"
+  2:
+    identifier: "gdpr_read"
+    default: "Read & Accepted"
+    locales:
+      english: "Read & Accepted"
+      deutsch: "Gelesen & Akzeptieren"
+      deutsch_be: "Gelesen & Akzeptieren"
+  3:
+    identifier: "gdpr_read_message_01"
+    default: "I confirm that I've read and agree;"
+    locales:
+      english: "I confirm that I've read and agree"
+      deutsch: "Ich bestätige die Nutzungsbedingungen"
+      deutsch_be: "Ich bestätige die Nutzungsbedingungen"
+  4:
+    identifier: "gdpr_read_message_02"
+    default: "to the terms of service and"
+    locales:
+      english: "to the terms of service and"
+      deutsch: "gelesen zu haben und mindestens 16 Jahre alt"
+      deutsch_be: "gelesen zu haben und mindestens 16 Jahre alt"
+  5:
+    identifier: "gdpr_read_message_03"
+    default: "that I am at least 16 years old"
+    locales:
+      english: "that I am at least 16 years old"
+      deutsch: "oder 13 Jahre alt zu sein mit Erlaubnis"
+      deutsch_be: "oder 13 Jahre alt zu sein mit Erlaubnis"
+  6:
+    identifier: "gdpr_read_message_04"
+    default: "or 13 years old with my guardian's permission."
+    locales:
+      english: "or 13 years old with my guardian's permission."
+      deutsch: "meiner Erziehungsberechtigten."
+      deutsch_be: "meiner Erziehungsberechtigten."
+  7:
+    identifier: "gdpr_link"
+    default: "You can find the privacy policy at"
+    locales:
+      english: "You can find the privacy policy at"
+      deutsch: "Die Nutzungsbedingungen findest du unter"
+      deutsch_be: "Die Nutzungsbedingungen findest du unter"
+  8:
+    identifier: "gdpr_deny"
+    default: "Decline"
+    locales:
+      english: "Decline"
+      deutsch: "Ablehnen"
+      deutsch_be: "Ablehnen"
+  9:
+    identifier: "gdpr_kick"
+    default: "You didn't agree to the Terms of Service"
+    locales:
+      english: "You didn't agree to the Terms of Service"
+      deutsch: "Du hast die Nutzungsbedingungen nicht akzeptiert."
+      deutsch_be: "Du hast die Nutzungsbedingungen nicht akzeptiert."
+  10:
+    identifier: "gdpr_deny_message"
+    default: "You will be kicked from the server."
+    locales:
+      english: "You will be kicked from the server."
+      deutsch: "Du wirst vom Server gekickt!"
+      deutsch_be: "Du wirst vom Server gekickt!"
+      
+#++++++++++++ Essentials +++++++++++ #
+#+++++ Essentials - report.txt +++++ #
+  11:
+    identifier: "esxtxtreport01"
+    default: "If you want to report someone for breaking a rule on the server"
+    locales:
+      english: "If you want to report someone for breaking a rule on the server"
+      deutsch: "Falls du jemanden für das verletzen von Regeln melden willst,"
+      deutsch_be: "Falls du jemanden für das verletzen von Regeln melden willst,"
+  12:
+    identifier: "esxtxtreport02"
+    default: "then please open a ticket on our Discord Server"
+    locales:
+      english: "then please open a ticket on our Discord Server"
+      deutsch: "dann öffne bitte ein Ticket auf unserem Discord Server"
+      deutsch_be: "dann öffne bitte ein Ticket auf unserem Discord Server"
+  13:
+    identifier: "esxtxtreport03"
+    default: "or send an e-mail together with the following info to"
+    locales:
+      english: "or send an e-mail together with the following info to"
+      deutsch: "oder sende eine E-Mail zusammen mit folgenden Infos an"
+      deutsch_be: "oder sende eine E-Mail zusammen mit folgenden Infos an"
+  14:
+    identifier: "esxtxtreport04"
+    default: "If you want to report a bug or need help in general"
+    locales:
+      english: "If you want to report a bug or need help in general"
+      deutsch: "Falls du einen Fehler melden möchtest oder Hilfe brauchst,"
+      deutsch_be: "Falls du einen Fehler melden möchtest oder Hilfe brauchst,"
+  15:
+    identifier: "esxtxtreport05"
+    default: "then contact us via our Support Channel on Discord"
+    locales:
+      english: "then contact us via our Support Channel on Discord"
+      deutsch: "dann kontaktiere uns über unseren Support-Kanal auf Discord"
+      deutsch_be: "dann kontaktiere uns über unseren Support-Kanal auf Discord"
+  16:
+    identifier: "esxtxtreport06"
+    default: "or send an e-mail to"
+    locales:
+      english: "or send an e-mail to"
+      deutsch: "oder sende eine E-Mail an"
+      deutsch_be: "oder sende eine E-Mail an"
+  17:
+    identifier: "esxtxtreportintro01"
+    default: "For info how to report a player use"
+    locales:
+      english: "For info how to report a player use"
+      deutsch: "Für Infos zum melden von Spielern, nutze"
+      deutsch_be: "Für Infos zum melden von Spielern, nutze"
+  18:
+    identifier: "esxtxtreportintro02"
+    default: "For info how to report a bug or get help in general use"
+    locales:
+      english: "For info how to report a bug or get help in general use"
+      deutsch: "Für Infos zum melden von Fehlern oder weitere Hilfe, nutze"
+      deutsch_be: "Für Infos zum melden von Fehlern oder weitere Hilfe, nutze"
+
+#+++++ DENIZEN +++++ #
+
+  300:
+    identifier: "welcome_title"
+    default: "§eWelcome to §6Foxcraft§e!"
+    locales:
+      english: "§eWelcome to §6Foxcraft§e!"
+      deutsch: "§eWillkommen auf §6Foxcraft§e!"
+      deutsch_be: "§eWillkommen auf §6Foxcraft§e!"
+  301:
+    identifier: "welcome_subtitle"
+    default: "§9Hope you'll enjoy your time,"
+    locales:
+      english: "§9Hope you'll enjoy your time,"
+      deutsch: "§9Wir hoffen du wirst Spaß haben,"
+      deutsch_be: "§9Wir hoffen du wirst Spaß haben,"
+  302:
+    identifier: "welcome_message_01"
+    default: "§eWelcome to Foxcraft 2.0,"
+    locales:
+      english: "§eWelcome to Foxcraft 2.0,"
+      deutsch: "§eWillkommen auf Foxcraft 2.0,"
+      deutsch_be: "§eWillkommen auf Foxcraft 2.0,"
+  303:
+    identifier: "welcome_message_02"
+    default: "§eThe Foxcraft Team hopes that you'll enjoy playing together or alone on this Server."
+    locales:
+      english: "§eThe Foxcraft Team hopes that you'll enjoy playing together or alone on this Server."
+      deutsch: "§eDas Foxcraft Team wünscht dir viel Spaß beim Erkunden & spielen mit anderen oder alleine."
+      deutsch_be: "§eDas Foxcraft Team wünscht dir viel Spaß beim Erkunden & spielen mit anderen oder alleine."
+  304:
+    identifier: "welcome_message_03"
+    default: "§eIf you need any help check the §3Wiki §eat §ahttps://wiki.foxcraft.biz §eor contact us via §9Discord §e| §ahttps://spikey.biz/discord"
+    locales:
+      english: "§eIf you need any help check the §3Wiki §eat §ahttps://wiki.foxcraft.biz §eor contact us via §9Discord §e| §ahttps://spikey.biz/discord"
+      deutsch: "§eFalls du Hilfe brauchst schaue doch im §3Wiki §eauf §ahttps://wiki.foxcraft.biz §e vorbei oder kontiere uns über §9Discord §e| §ahttps://spikey.biz/discord"
+      deutsch_be: "§eFalls du Hilfe brauchst schaue doch im §3Wiki §eauf §ahttps://wiki.foxcraft.biz §e vorbei oder kontiere uns über §9Discord §e| §ahttps://spikey.biz/discord"
+  305:
+    identifier: "welcome_message_04"
+    default: "§eAnd don't worry that you can't build or mine here. That's because you're standing in the Spawnchunks."
+    locales:
+      english: "§eAnd don't worry that you can't build or mine here. That's because you're standing in the Spawnchunks."
+      deutsch: "§eUnd nicht wundern, dass du hier nichts abbauen oder bauen kannst. Dies liegt daran, dass du in den Spawnchunks stehst."
+      deutsch_be: "§eUnd nicht wundern, dass du hier nichts abbauen oder bauen kannst. Dies liegt daran, dass du in den Spawnchunks stehst."
+  306:
+    identifier: "welcome_message_05"
+    default: "§eOn §ahttps://map.foxcraft.biz §eyou can see where you and other players are and of yourse where the Spawnchunks end."
+    locales:
+      english: "§eOn §ahttps://map.foxcraft.biz §eyou can see where you and other players are and of yourse where the Spawnchunks end."
+      deutsch: "§eAuf §ahttps://map.foxcraft.biz §ekannst du sehen wo sich jeder befindet und natürlich auch wo die Spawnchunks enden."
+      deutsch_be: "§eAuf §ahttps://map.foxcraft.biz §ekannst du sehen wo sich jeder befindet und natürlich auch wo die Spawnchunks enden."
+  307:
+    identifier: "welcome_message_06"
+    default: "§eHave fun!"
+    locales:
+      english: "§eHave fun!"
+      deutsch: "§eViel Spaß!"
+      deutsch_be: "§eViel Spaß!"
+  308:
+    identifier: "worldspawnNPCname"
+    default: "Spikey's Helper"
+    locales:
+      english: "Spikey's Helper"
+      deutsch: "Spikeys Helfer"
+      deutsch_be: "Spikeys Helfer"
+  309:
+    identifier: "worldspawn_npc_greeting"
+    default: "Welcome at the Spawn,"
+    locales:
+      english: "Welcome at the Spawn,"
+      deutsch: "Willkommen am Spawn,"
+      deutsch_be: "Willkommen am Spawn,"
+  310:
+    identifier: "worldspawn_npc_farewell"
+    default: "Bye,"
+    locales:
+      english: "Bye,"
+      deutsch: "Bye,"
+      deutsch_be: "Bye,"
+  311:
+    identifier: "worldspawn_npc_firstgreeting"
+    default: "You must be new! Welcome,"
+    locales:
+      english: "You must be new! Welcome,"
+      deutsch: "Du musst neu sein! Willkommen"
+      deutsch_be: "Du musst neu sein! Willkommen"
+  312:
+    identifier: "seedmsg"
+    default: "The seed is secret!"
+    locales:
+      english: "The seed is secret!"
+      deutsch: "Der Seed ist geheim!"
+      deutsch_be: "Ser Seed ist geheim!"
+  313:
+    identifier: "resourcePrompt"
+    default: "§6PLease download the §9§lresourcpack§r§6 to be able to hear all custom sounds and see all custom images correctly!"
+    locales:
+      english: "§6PLease download the §9§lresourcpack§r§6 to be able to hear all custom sounds and see all custom images correctly!"
+      deutsch: "§6Bitte lade das §9§lresourcenpaket§r§6 herunter um alle Sounds und Items korrekt sehen zu können."
+      deutsch_be: "§6Bitte lade das §9§lresourcenpaket§r§6 herunter um alle Sounds und Items korrekt sehen zu können."
+  314:
+    identifier: "toggleCommand"
+    default: "§e§l[Scoreboard]§r§d Succesfully toggled!"
+    locales:
+      english: "§e§l[Scoreboard]§r§d Succesfully toggled!"
+      deutsch: "§e§l[Scoreboard]§r§d Erfoglreich umgeschaltet!"
+      deutsch_be: "§e§l[Scoreboard]§r§d Erfoglreich umgeschaltet!"
+  315:
+    identifier: "toggleCommandDescription"
+    default: "Used to toggle the scoreboard on/off."
+    locales:
+      english: "Used to toggle the scoreboard on/off."
+      deutsch: "Schaltet das Scoreboard an/aus."
+      deutsch_be: "Schaltet das Scoreboard an/aus."
+
+#+++++ GENERAL +++++ #
+
+  500:
+    identifier: "your"
+    default: "your"
+    locales:
+      english: "your"
+      deutsch: "dein"
+      deutsch_be: "dein"
+  501:
+    identifier: "_your"
+    default: "Your"
+    locales:
+      english: "Your"
+      deutsch: "Dein"
+      deutsch_be: "Dein"
+  502:
+    identifier: "username"
+    default: "username"
+    locales:
+      english: "username"
+      deutsch: "Benutzername"
+      deutsch_be: "Benutzername"
+  503:
+    identifier: "_username"
+    default: "Username"
+    locales:
+      english: "Your"
+      deutsch: "Benutzername"
+      deutsch_be: "Benutzername"
+  504:
+    identifier: "my"
+    default: "my"
+    locales:
+      english: "my"
+      deutsch: "mein/e"
+      deutsch_be: "mein/e"
+  505:
+    identifier: "_my"
+    default: "My"
+    locales:
+      english: "My"
+      deutsch: "Mein/e"
+      deutsch_be: "Mein/e"
+  506:
+    identifier: "player"
+    default: "player"
+    locales:
+      english: "player"
+      deutsch: "Spieler"
+      deutsch_be: "Spieler"
+  507:
+    identifier: "_player"
+    default: "PLayer"
+    locales:
+      english: "PLayer"
+      deutsch: "Spieler"
+      deutsch_be: "Spieler"
+  508:
+    identifier: "reported_player"
+    default: "reported player"
+    locales:
+      english: "reported player"
+      deutsch: "gemeldeter Spieler"
+      deutsch_be: "gemeldeter Spieler"
+  509:
+    identifier: "_reported_player"
+    default: "Reported Player"
+    locales:
+      english: "Reported Player"
+      deutsch: "Gemeldeter Spieler"
+      deutsch_be: "Gemeldeter Spieler"
+  510:
+    identifier: "reason"
+    default: "reason"
+    locales:
+      english: "reason"
+      deutsch: "Grund"
+      deutsch_be: "Grund"
+  511:
+    identifier: "_reason"
+    default: "Reason"
+    locales:
+      english: "Reason"
+      deutsch: "Grund"
+      deutsch_be: "Grund"
+  512:
+    identifier: "date"
+    default: "Date"
+    locales:
+      english: "Date"
+      deutsch: "Datum"
+      deutsch_be: "Datum"
+  513:
+    identifier: "time"
+    default: "Time"
+    locales:
+      english: "Time"
+      deutsch: "Zeit"
+      deutsch_be: "Zeit"
+  514:
+    identifier: "foxcoin"
+    default: "foxcoin"
+    locales:
+      english: "foxcoin"
+      deutsch: "Fuchstaler"
+      deutsch_be: "Fuchstaler"
+  515:
+    identifier: "foxcoins"
+    default: "foxcoins"
+    locales:
+      english: "foxcoin"
+      deutsch: "Fuchstaler"
+      deutsch_be: "Fuchstaler"
+  516:
+    identifier: "_foxcoin"
+    default: "Foxcoin"
+    locales:
+      english: "Foxcoin"
+      deutsch: "Fuchstaler"
+      deutsch_be: "Fuchstaler"
+  517:
+    identifier: "_foxcoins"
+    default: "Foxcoins"
+    locales:
+      english: "Foxcoins"
+      deutsch: "Fuchstaler"
+      deutsch_be: "Fuchstaler"
+  518:
+    identifier: "world"
+    default: "world"
+    locales:
+      english: "world"
+      deutsch: "Welt"
+      deutsch_be: "Welt"
+  519:
+    identifier: "_world"
+    default: "World"
+    locales:
+      english: "World"
+      deutsch: "Welt"
+      deutsch_be: "Welt"
+  520:
+    identifier: "playtime"
+    default: "playtime"
+    locales:
+      english: "playtime"
+      deutsch: "Spielzeit"
+      deutsch_be: "Spielzeit"
+  521:
+    identifier: "_playtime"
+    default: "Playtime"
+    locales:
+      english: "Playtime"
+      deutsch: "Spielzeit"
+      deutsch_be: "Spielzeit"
+  522:
+    identifier: "gold_ore"
+    default: "gold ore"
+    locales:
+      english: "gold ore"
+      deutsch: "Golderz"
+      deutsch_be: "Golderz"
+  523:
+    identifier: "goldore"
+    default: "Gold ore"
+    locales:
+      english: "Gold ore"
+      deutsch: "Golderz"
+      deutsch_be: "Golderz"
+  524:
+    identifier: "coords"
+    default: "Coordinates"
+    locales:
+      english: "Coordinates"
+      deutsch: "Koordinaten"
+      deutsch_be: "Koordinaten"
+  525:
+    identifier: "discordCTA01"
+    default: "Did you already join our Discord Server?"
+    locales:
+      english: "Did you already join our Discord Server?"
+      deutsch: "Bist du schon unserem Discord-Server beigetreten?"
+      deutsch_be: "Bist du schon unserem Discord-Server beigetreten?"
+  526:
+    identifier: "discordCTA02"
+    default: "If not, click"
+    locales:
+      english: "If not, click"
+      deutsch: "Wenn nicht dann klicke"
+      deutsch_be: "Wenn nicht dann klicke"
+  527:
+    identifier: "discordCTA03"
+    default: "here!"
+    locales:
+      english: "here!"
+      deutsch: "hier!"
+      deutsch_be: "hier!"
+  528:
+    identifier: "Xrecieved"
+    default: "Recieved"
+    locales:
+      english: "Recieved"
+      deutsch: "Erhalten"
+      deutsch_be: "Erhalten"
+  529:
+    identifier: "Xsaturation"
+    default: "Saturation"
+    locales:
+      english: "Saturation"
+      deutsch: "Sättigung"
+      deutsch_be: "Sättigung"
+# Scoreboards
+# 1000 - 1200
+  1000:
+    identifier: "tab_head_01"
+    default: "Welcome to Foxcraft 2.0!"
+    locales:
+      english: "Welcome to Foxcraft 2.0!"
+      deutsch: "Willkommen auf Foxcraft 2.0!"
+      deutsch_be: "Wenn du das hier lesen kannst hast du was Falsch eingestellt!"
+  1001:
+    identifier: "tab_foot_01"
+    default: "Welcome to Foxcraft 2.0!"
+    locales:
+      english: "Welcome to Foxcraft 2.0!"
+      deutsch: "Willkommen auf Foxcraft 2.0!"
+      deutsch_be: "Wenn du das hier lesen kannst hast du was Falsch eingestellt!"
+  1002:
+    identifier: "pb_nether_done_01"
+    default: "All challenges passed!"
+    locales:
+      english: "All challenges passed!"
+      deutsch: "Alle Aufgaben erfüllt!"
+      deutsch_be: "Alle Aufgaben erfüllt!"
+  1003:
+    identifier: "pb_nether_done_02"
+    default: "Nether is comming soon™!"
+    locales:
+      english: "Nether is comming soon™!"
+      deutsch: "Das Nether kommt bald™!"
+      deutsch_be: "Das Nether kommt bald™!"
+# ShopGUI
+# 5000 - 6999
+  5000:
+    identifier: "money"
+    default: "Money"
+    locales:
+      english: "Money"
+      deutsch: "Geld"
+      deutsch_be: "Geld"
+  5001:
+    identifier: "haste_potion_30"
+    default: "Miner's Dream"
+    locales:
+      english: "Miner's Dream"
+      deutsch: "Bergarbeiters Traum"
+      deutsch_be: "Bergarbeiters Traum"
+
+ #### QUESTS ####
+  # General
+  7000:
+    identifier: "questCommandInfo"
+    default: "You can see important quest info by using \"\/quest\""
+    locales:
+      english: "You can see important quest info by using \"\/quest\""
+      deutsch: "Du kannst wichtige Infos zur aktuellen Quest mit \"\/quest\" abrufen."
+      deutsch_be: "Du kannst wichtige Infos zur aktuellen Quest mit \"\/quest\" abrufen."
+  7001:
+    identifier: "questCurrentTask"
+    default: "Current Task"
+    locales:
+      english: "Current Task"
+      deutsch: "Aktuelle Aufgabe"
+      deutsch_be: "Aktuelle Aufgabe"
+  7002:
+    identifier: "commandQuestDesc"
+    default: "Shows your current quest tasks."
+    locales:
+      english: "Shows your current quest tasks."
+      deutsch: "Zeigt deine aktuelle Aufgabe und Quest an."
+      deutsch_be: "Zeigt deine aktuelle Aufgabe und Quest an."
+  7003:
+    identifier: "commandQuestRank"
+    default: "You now have the clearance level of"
+    locales:
+      english: "You now have the clearance level of"
+      deutsch: "Deine Freigeabestufe lautet nun"
+      deutsch_be: "Deine Freigeabestufe lautet nun"
+
+  # Nether Quest
+  7100:
+    identifier: "netherQuestName"
+    default: "A Hell of a World"
+    locales:
+      english: "A Hell of a World"
+      deutsch: "Eine höllische Welt"
+      deutsch_be: "Eine höllische Welt"
+  7101:
+    identifier: "netherQuestTask01"
+    default: "Go to the coordinates that you got."
+    locales:
+      english: "A Hell of a World"
+      deutsch: "Eine höllische Welt"
+      deutsch_be: "Eine höllische Welt"
+  7102:
+    identifier: "netherQuestTask02"
+    default: "Find a way to ride the elevator."
+    locales:
+      english: "Find a way to ride the elevator."
+      deutsch: "Finde einen Weg mit dem Fahtstuhl zu fahren."
+      deutsch_be: "Finde einen Weg mit dem Fahtstuhl zu fahren."
+  7103:
+    identifier: "QuestNetherLowSec"
+    default: "§c§lError:§r You're clearance level is too low to enter this area!"
+    locales:
+      english: "§c§lError:§r You're clearance level is too low to enter this area!"
+      deutsch: "§c§lFehler:§r Deine Sicherheitsstufe ist zu gering um diesen Bereich zu betreten."
+      deutsch_be: "§c§lFehler:§r Deine Sicherheitsstufe ist zu gering um diesen Bereich zu betreten."
+  7104:
+    identifier: "questNetherUnknown"
+    default: "You don't know how to activate Portals!"
+    locales:
+      english: "You don't know how to activate Portals!"
+      deutsch: "Du weißt noch nicht wie man Nether-Portale aktiviert!"
+      deutsch_be: "Du weißt noch nicht wie man Nether-Portale aktiviert!"
+  7105:
+    identifier: "questNetherEarlyLift"
+    default: "I shouldn't enter this. It might be dangerous!"
+    locales:
+      english: "I shouldn't enter this. It might be dangerous!"
+      deutsch: "Ichh sollte da nicht reingehen. Es könnte gefährlich sein!"
+      deutsch_be: "Ichh sollte da nicht reingehen. Es könnte gefährlich sein!"
+  7106:
+    identifier: "netherQuestTask03"
+    default: "Explore the laboratory."
+    locales:
+      english: "Explore the laboratory."
+      deutsch: "Erkunde das Labor."
+      deutsch_be: "Erkunde das Labor."
+  7107:
+    identifier: "netherQuestTask04"
+    default: "Go through the Portal! - Use the Warper."
+    locales:
+      english: "Go through the Portal! - Use the Warper."
+      deutsch: "Durchschreite das Portal! - Verwende den Teleporter."
+      deutsch_be: "Durchschreite das Portal! - Verwende den Teleporter."
+  7108:
+    identifier: "netherQuestTask05"
+    default: "Collect Data for the Lab."
+    locales:
+      english: "Collect Data for the Lab."
+      deutsch: "Sammle Daten für das Labor."
+      deutsch_be: "Sammle Daten für das Labor."
+
+  # Nether Quest Part 1
+  7120:
+    identifier: "questNetherFirst01"
+    default: "Incomming connection from"
+    locales:
+      english: "Incomming connection from"
+      deutsch: "Eingehende Verbindung von"
+      deutsch_be: "Eingehende Verbindung von"
+  7121:
+    identifier: "connectionEstablished"
+    default: "Connection established"
+    locales:
+      english: "Connection established"
+      deutsch: "Verbindung hergestellt"
+      deutsch_be: "Verbindung hergestellt"
+  7122:
+    identifier: "questNetherFirst02"
+    default: "Whoever you are... I need your help."
+    locales:
+      english: "Whoever you are... I need your help."
+      deutsch: "Wer auch immer du bist... Ich brauche deine Hilfe..."
+      deutsch_be: "Wer auch immer du bist... Ich brauche deine Hilfe..."
+  7123:
+    identifier: "questNetherFirst03"
+    default: "I cannot give you much information over this public channel but I'll tranfer you some coordinates now."
+    locales:
+      english: "I cannot give you much information over this public channel but I'll tranfer you some coordinates now."
+      deutsch: "Ich kann dir keine weiteren Infos über diesen öffentlichen Kanal geben, aber ich übertrage dir nun Koordinaten."
+      deutsch_be: "Ich kann dir keine weiteren Infos geben über diesen öffentlichen Kanal geben, aber ich übertrage dir nun Koordinaten."
+  7124:
+    identifier: "recievedCoords"
+    default: "Recieved Coordinates"
+    locales:
+      english: "Recieved Coordinates"
+      deutsch: "Koordinaten empfangen"
+      deutsch_be: "Koordinaten empfangen"
+  7125:
+    identifier: "questNetherFirst04"
+    default: "I need to go now. Just try to find the coordinates."
+    locales:
+      english: "I need to go now. Just try to find the coordinates."
+      deutsch: "Ich muss jetzt die Verbindung trennen. Suche einfach die Koordinaten auf."
+      deutsch_be: "Ich muss jetzt die Verbindung trennen. Suche einfach die Koordinaten auf."
+  7126:
+    identifier: "disconnected"
+    default: "Disconnected"
+    locales:
+      english: "Disconnected"
+      deutsch: "Verbindung beendet"
+      deutsch_be: "Verbindung beendet"
+
+#Nether Lab Lift 2
+  7130:
+    identifier: "questNetherLift01"
+    default: "Why is an elevator here?"
+    locales:
+      english: "Why is an elevator here?"
+      deutsch: "Was macht denn hier ein Fahrstuhl?"
+      deutsch_be: "Was macht denn hier ein Fahrstuhl?"
+  7131:
+    identifier: "questNetherLift02"
+    default: "But it has to be the thing the guy were talking about."
+    locales:
+      english: "But it has to be the thing the guy were talking about."
+      deutsch: "Aber das muss wohl das sein wovon der seltsame Typ in der Nachricht gesprochen hatte."
+      deutsch_be: "Aber das muss wohl das sein wovon der seltsame Typ in der Nachricht gesprochen hatte."
+  7132:
+    identifier: "questNetherLift03"
+    default: "But how do I activate it?"
+    locales:
+      english: "But how do I activate it?"
+      deutsch: "Wie kriege ich den jetzt aber zum laufen?"
+      deutsch_be: "Wie kriege ich den jetzt aber zum laufen?"
+
+#Nether Lab Pre Entry
+  7140:
+    identifier: "questNetherEntry01"
+    default: "I should  try to findout where the heck I am!"
+    locales:
+      english: "I should  try to findout where the heck I am!"
+      deutsch: "Ich sollte herrausfinden wo zur Hölle ich bin!"
+      deutsch_be: "Ich sollte herrausfinden wo zur Hölle ich bin!"
+  7141:
+    identifier: "questNetherEntry02"
+    default: "But who knows... Maybe this is all just a dream."
+    locales:
+      english: "But who knows... Maybe this is all just a dream."
+      deutsch: "Wer weiß... Vielleicht ist das alles auch nur ein Traum."
+      deutsch_be: "Wer weiß... Vielleicht ist das alles auch nur ein Traum."
+  7142:
+    identifier: "questNetherEntry03"
+    default: "I hope the Elevator will bring me back up too..."
+    locales:
+      english: "I hope the Elevator will bring me back up too..."
+      deutsch: "Ich hoffe der Fahrstuhl bringt mich auch wieder nach oben..."
+      deutsch_be: "Ich hoffe der Fahrstuhl bringt mich auch wieder nach oben..."
+
+#Nether Lab Reception
+  7143:
+    identifier: "questNetherReception01"
+    default: "Welcome to \"§9Wither Laboratories§r\"!"
+    locales:
+      english: "Welcome to \"§9Wither Laboratories§r\"!"
+      deutsch: "Willkommen in den \"§9Wither Laboratories§r\"!"
+      deutsch_be: "Willkommen in den \"§9Wither Laboratories§r\"!"
+  7144:
+    identifier: "questNetherReception02"
+    default: "A daughter company of \"Fox'n'Science Ltd.\"."
+    locales:
+      english: "A daughter company of \"Fox'n'Science Ltd.\"."
+      deutsch: "Eine Einrichtung der \"Fox'n'Science GMBH\"."
+      deutsch_be: "Eine Einrichtung der \"Fox'n'Science GMBH\"."
+  7145:
+    identifier: "questNetherReception03"
+    default: "You must be the new janitor. Devin, right?"
+    locales:
+      english: "You must be the new janitor. Devin, right?"
+      deutsch: "Du musst der neue Hausmeister sein. Dein Name war \"Devin\", richtig?"
+      deutsch_be: "Du musst der neue Hausmeister sein. Dein Name war \"Devin\", richtig?"
+  7146:
+    identifier: "questNetherReception04"
+    default: "You're a bit early but that's fine. I'll just register you in the system so you can go through the security barrier."
+    locales:
+      english: "You're a bit early but that's fine. I'll just register you in the system so you can go through the security barrier."
+      deutsch: "Du bist etwas früh, aber das ist in Ordnung. Ich registriere dich schnell im System damit du durch die Kontrolle kommst."
+      deutsch_be: "Du bist etwas früh, aber das ist in Ordnung. Ich registriere dich schnell im System damit du durch die Kontrolle kommst."
+  7147:
+    identifier: "questNetherReception05"
+    default: "Just talk to me when I shall open the door."
+    locales:
+      english: "Just talk to me when I shall open the door."
+      deutsch: "Sprech mich einfach an, wenn ich die Tür öffnen soll."
+      deutsch_be: "Sprech mich einfach an, wenn ich die Tür öffnen soll."
+  7148:
+    identifier: "questNetherReceptionist"
+    default: "Receptionist"
+    locales:
+      english: "Receptionist"
+      deutsch: "Portier"
+      deutsch_be: "Portier"
+
+#Nether Lab Exploring
+  7150:
+    identifier: "questNetherExplore01"
+    default: "I should try find whoever tried to contact me."
+    locales:
+      english: "I should try find whoever tried to contact me."
+      deutsch: "Ich sollte versuchen Die Person zu finden welche versucht hat mich zu kontaktieren."
+      deutsch_be: "Ich sollte versuchen Die Person zu finden welche versucht hat mich zu kontaktieren."
+  7151:
+    identifier: "questNetherExplore02"
+    default: "But something tells me that won't be that easy..."
+    locales:
+      english: "But something tells me that won't be that easy..."
+      deutsch: "Aber etwas sagt mir, dass dies nicht so einfach wird..."
+      deutsch_be: "Aber etwas sagt mir, dass dies nicht so einfach wird..."
+  7152:
+    identifier: "questNetherExplore03"
+    default: "Let's look around."
+    locales:
+      english: "Let's look around."
+      deutsch: "Schauen wir uns am besten einfach mal um."
+      deutsch_be: "Schauen wir uns am besten einfach mal um."
+  7153:
+    identifier: "questNetherExploreNPC01"
+    default: "Hey, could you do me a favor and take a look at Security to make sure they are working and sleeping... again."
+    locales:
+      english: "Hey, could you do me a favor and take a look at Security to make sure they are working and sleeping... again."
+      deutsch: "Hey, könntest du in der Sicherheit mal vorbeischauen und die Faulpelze aufwecken, falls sie - wieder einmal - schlafen."
+      deutsch_be: "Hey, könntest du in der Sicherheit mal vorbeischauen und die Faulpelze aufwecken, falls sie - wieder einmal - schlafen."
+  7154:
+    identifier: "questNetherExploreNPC02"
+    default: "How we contained Subject XX56 or better known as \"Ghast\"? That's a good question..."
+    locales:
+      english: "How we contained Subject XX56 or better known as \"Ghast\"? That's a good question..."
+      deutsch: "Wie wir Subjekt XX56 oder besser bekannt als Ghast einfingen? Gute Frage..."
+      deutsch_be: "Wie wir Subjekt XX56 oder besser bekannt als Ghast einfingen? Gute Frage..."
+  7155:
+    identifier: "questNetherExploreNPC03"
+    default: "The scientist ignores you and just focuses on the white thing."
+    locales:
+      english: "The scientist ignores you and just focuses on the white thing."
+      deutsch: "Der Wissenschaftler ignoriert dich und ist vollkommen fasziniert von der weißen Kreatur."
+      deutsch_be: "Der Wissenschaftler ignoriert dich und ist vollkommen fasziniert von der weißen Kreatur."
+
+#Nether Lab Knox
+  7160:
+    identifier: "questNetherKnox01"
+    default: "Finally I meet you in Person! I'm surprised that you made it in this high security area."
+    locales:
+      english: "Finally I meet you in Person! I'm surprised that you made it in this high security area."
+      deutsch: "Endlich treffe ich dich persönlich!"
+      deutsch_be: "Endlich treffe ich dich persönlich!"
+  7161:
+    identifier: "questNetherKnox02"
+    default: "I'm sure you have a lot of questions but they have to wait. There are more important things to do."
+    locales:
+      english: "I'm sure you have a lot of questions but they have to wait. There are more important things to do."
+      deutsch: "Du hast bestimmt viele Fragen, aber diese müssen warten. Es gibt wichtigeres zu erledigen."
+      deutsch_be: "Du hast bestimmt viele Fragen, aber diese müssen warten. Es gibt wichtigeres zu erledigen."
+  7162:
+    identifier: "questNetherKnox03"
+    default: "But let me introduce myself first. My name's Professor Knox."
+    locales:
+      english: "But let me introduce myself first. My name's Professor Knox."
+      deutsch: "Aber vorstellen werde ich mich dennoch. Mein Name ist Professor Knox."
+      deutsch_be: "Aber vorstellen werde ich mich dennoch. Mein Name ist Professor Knox."
+  7163:
+    identifier: "questNetherKnox04"
+    default: "And don't bother to introduce yourself. I know everything about you that I need to know."
+    locales:
+      english: "And don't bother to introduce yourself. I know everything about you that I need to know."
+      deutsch: "Du brauchst dich nicht vorstellen. Ich weiß schon alles über dich"
+      deutsch_be: "Du brauchst dich nicht vorstellen. Ich weiß schon alles über dich was ich wissen muss"
+  7164:
+    identifier: "questNetherKnox05"
+    default: "Because I've contacted you since I need your assistance to collect some data about the Nether."
+    locales:
+      english: "Because I've contacted you since I need your assistance to collect some data about the Nether."
+      deutsch: "Ich habe dich nämlich kontaktiert, da ich deine Hilfe benötige. Ich brauche einen Helfer der für mich Daten im Nether sammelt."
+      deutsch_be: "Ich habe dich nämlich kontaktiert, da ich deine Hilfe benötige. Ich brauche einen Helfer der für mich Daten im Nether sammelt."
+  7165:
+    identifier: "questNetherKnox06"
+    default: "Because the management won't provide any more personell and that just because the last three expeditions are still missing.."
+    locales:
+      english: "Because the management won't provide any more personell and that just because the last three expeditions are still missing.."
+      deutsch: "Denn die Leitung stellt kein Personal mehr zur Verfügung und nur, weil die letzten 3 Expeditionen nicht zurückkamen."
+      deutsch_be: "Denn die Leitung stellt kein Personal mehr zur Verfügung und nur, weil die letzten 3 Expeditionen nicht zurückkamen."
+  7166:
+    identifier: "questNetherKnox07"
+    default: "What? What you get in exchange? I cannot offer you any Foxcoins . Though I can teach you how to create your own Portal when I got enough data."
+    locales:
+      english: "What? What you get in exchange? I cannot offer you any Foxcoins . Though I can teach you how to create your own Portal when I got enough data."
+      deutsch: "Wie? Was du davon hast? Ich kann dir leider keine Fuchstaler  anbieten... Aber ich werde dich an meinen Forschungsergebinissen teilhaben lassen."
+      deutsch_be: "Wie? Was du davon hast? Ich kann dir leider keine Fuchstaler  anbieten... Aber ich werde dich an meinen Forschungsergebinissen teilhaben lassen."
+  7167:
+    identifier: "questNetherKnox08"
+    default: "Since that what I'm working on right now. By now it's not possible to create a self established connection that won't kill you when going through."
+    locales:
+      english: "Since that what I'm working on right now. By now it's not possible to create a self established connection that won't kill you when going through."
+      deutsch: "Ich arbeite nämlich gerade an einem Weg ein eigene Verbindung zum Nether herzustellen, damit wir in ein besser ausgerüstetes Labor umziehen können."
+      deutsch_be: "Ich arbeite nämlich gerade an einem Weg ein eigene Verbindung zum Nether herzustellen, damit wir in ein besser ausgerüstetes Labor umziehen können."
+  7168:
+    identifier: "questNetherKnox09"
+    default: "Here take my security pass so you can use the teleporter to the Portal."
+    locales:
+      english: "Here take my security pass so you can use the teleporter to the Portal."
+      deutsch: "Hier ich gebe dir meinen Sicherheitscode. Begebe dich einfach in den Teleporter und er bringt dich zum Portal."
+      deutsch_be: "Hier ich gebe dir meinen Sicherheitscode. Begebe dich einfach in den Teleporter und er bringt dich zum Portal."
+  7169:
+    identifier: "questNetherKnox10"
+    default: "And before I forget it. There is a very weak connection from the Nether to the Overworld."
+    locales:
+      english: "And before I forget it. There is a very weak connection from the Nether to the Overworld."
+      deutsch: "Bevor ich es vergesse. Die Verbindung zur Oberwelt ist im Nether sehr schlecht."
+      deutsch_be: "Bevor ich es vergesse. Die Verbindung zur Oberwelt ist im Nether sehr schlecht."
+  7170:
+    identifier: "questNetherKnox11"
+    default: "You might want to take a NetherPorter with you. So you can always teleport yourself to the main Portal."
+    locales:
+      english: "You might want to take a NetherPorter with you. SO you can always teleport yourself to the main Portal."
+      deutsch: "Besorge dir also voher besser einen NetherPorter, welcher dich zum Hauptportal zurückbringen kann. Hier ich gebe dir einen, verliere ihn aber nicht und man kann ihn nur einmal verwenden."
+      deutsch_be: "Besorge dir also voher besser einen NetherPorter, welcher dich zum Hauptportal zurückbringen kann. Hier ich gebe dir einen, verliere ihn aber nicht und man kann ihn nur einmal verwenden."
+  7171:
+    identifier: "netherPorterInfo"
+    default: "You are not able to use the following commands in the Nether \"\/home\"\"\/spawn\". Use \"\/porter\" instead which will warp you to the main portal. Each use costs 1 LVL though. If you don't have any XP it will take hearts instead."
+    locales:
+      english: "You are not able to use the following commands in the Nether \"\/home\"\"\/spawn\". Use \"\/porter\" instead which will warp you to the main portal. Each use costs 1 LVL though. If you don't have any XP it will take hearts instead."
+      deutsch: "DU wirst die folgenden Befehle nicht im Nether nutzen können \"\/home\"\"\/spawn\". Use \"\/porter\". Nutze \"\/porter\" stattdessen. Porter wird allerdings für jede Verwenden 1 LVL verbrauchen. Hast du keine LVL mehr verbraucht es deine Herzen."
+      deutsch_be: "DU wirst die folgenden Befehle nicht im Nether nutzen können \"\/home\"\"\/spawn\". Use \"\/porter\". Nutze \"\/porter\" stattdessen. Porter wird allerdings für jede Verwenden 1 LVL verbrauchen. Hast du keine LVL mehr verbraucht es deine Herzen."
+# NetherLab Quest
+  7180:
+    identifier: "questNetherLab01"
+    default: "do you copy?"
+    locales:
+      english: "do you copy?"
+      deutsch: "kannst du mich hören?"
+      deutsch_be: "kannst du mich hören?"
+  7181:
+    identifier: "questNetherLab02"
+    default: "Great!"
+    locales:
+      english: "Great!"
+      deutsch: "Großartig!"
+      deutsch_be: "Großartig!"
+  7182:
+    identifier: "questNetherLab03"
+    default: "The porter I gave you also will record the things you do to collect Data."
+    locales:
+      english: "The porter I gave you also will record the things you do to collect Data."
+      deutsch: "Den Porter den ich dir gegeben habe sammelt automatisch Daten darüber was du im Nether machst."
+      deutsch_be: "Den Porter den ich dir gegeben habe sammelt automatisch Daten darüber was du im Nether machst."
+  7183:
+    identifier: "questNetherLab04"
+    default: "Just do the tasks I'll send you and I'll... I mean - WE - will be able to create our own Portals!"
+    locales:
+      english: "Just do the tasks I'll send you and I'll... I mean - WE - will be able to create our own Portals!"
+      deutsch: "Mache einfach die AUfgaben welche ich dir sende und ich werde... Ich meine - WIR - werden bald unsere eigenen Portale erschaffen können."
+      deutsch_be: "Mache einfach die AUfgaben welche ich dir sende und ich werde... Ich meine - WIR - werden bald unsere eigenen Portale erschaffen können."
+  7184:
+    identifier: "questNetherLab05"
+    default: "The first thing I need you to do is mine 100 Blocks of Quarz Ore."
+    locales:
+      english: "The first thing I need you to do is mine 100 Blocks of Quarz Ore."
+      deutsch: "Die erste Sache welche du für mich machen musst ist Quarzerz abbauen und davon ganze 100 Stück."
+      deutsch_be: "Die erste Sache welche du für mich machen musst ist Quarzerz abbauen und davon ganze 100 Stück."
+  7185:
+    identifier: "questNetherLab06"
+    default: "Don't worry, you can keep the Quarz."
+    locales:
+      english: "Don't worry, you can keep the Quarz."
+      deutsch: "Und keine Sorge. Du darfst das Quarz behalten."
+      deutsch_be: "Und keine Sorge. Du darfst das Quarz behalten."
+  7186:
+    identifier: "questNetherLab07"
+    default: "Great Job"
+    locales:
+      english: "Great Job"
+      deutsch: "Gut gemacht"
+      deutsch_be: "Gut gemacht"
+  7187:
+    identifier: "questNetherLab08"
+    default: "Now I need you to do a few more things. The best would be if you'd use \"\/quest\" to check what is still to do."
+    locales:
+      english: "Now I need you to do a few more things. The best would be if you'd use \"\/quest\" to check what is still to do."
+      deutsch: "Jetzt musst du etwas mehr für mich erledigen. Das beste wäre, wenn du mit \"\/quest\" nachschaust was genau."
+      deutsch_be: "Jetzt musst du etwas mehr für mich erledigen. Das beste wäre, wenn du mit \"\/quest\" nachschaust was genau."
+  7188:
+    identifier: "questNetherLab09"
+    default: "You're good at this! I just need one last thing then I should have enough Data. Bring me a netherrite Block."
+    locales:
+      english: "You're good at this! I just need one last thing then I should have enough Data. Bring me a netherrite Block."
+      deutsch: "Du bist ja richtig gut darin! Ich brauche nur noch eine letzte Sache: Einen Netheritblock."
+      deutsch_be: "Du bist ja richtig gut darin! Ich brauche nur noch eine letzte Sache: Einen Netheritblock."
+  7189:
+    identifier: "questNetherLab010"
+    default: "I knew I could cound on you! Let me quickly take a look at your Porter..."
+    locales:
+      english: "I knew I could cound on you! Let me quickly take a look at your Porter..."
+      deutsch: "Ich wusste doch, dass ich auf dich zählen kann! Lass mich mal schnell einen Blick auf deinen Porter werfen..."
+      deutsch_be: "Ich wusste doch, dass ich auf dich zählen kann! Lass mich mal schnell einen Blick auf deinen Porter werfen..."
+  7190:
+    identifier: "questNetherLab11"
+    default: "There you go! I've upgraded it so you can now safely create and go through selfmade Portals!"
+    locales:
+      english: "There you go! I've upgraded it so you can now safely create and go through selfmade Portals!"
+      deutsch: "Und fertig! Ich habe gerade deinem Porter ein Upgrade verpasst durch welchen du sicher durch selbstsgeschaffene Portale reisen kannst."
+      deutsch_be: "Und fertig! Ich habe gerade deinem Porter ein Upgrade verpasst durch welchen du sicher durch selbstsgeschaffene Portale reisen kannst."
+  7191:
+    identifier: "questNetherLab12"
+    default: "Thanks for you help and by the way I could spare some of my fonds as an extra reward for you!"
+    locales:
+      english: "Thanks for you help and by the way I could spare some of my fonds as an extra reward for you!"
+      deutsch: "Vielen Dank für deine Hilfe! Ich konnte außerdem ein wenig meines Forschungsbudget zuücklegen als extra Belohnung für dich."
+      deutsch_be: "Vielen Dank für deine Hilfe! Ich konnte außerdem ein wenig meines Forschungsbudget zuücklegen als extra Belohnung für dich."
+# Newbie Quest
+  7500:
+    identifier: "questNewbieName"
+    default: "Welcome to Foxcraft!"
+    locales:
+      english: "Welcome to Foxcraft!"
+      deutsch: "Willkommen in Foxcraft!"
+      deutsch_be: "Willkommen in Foxcraft!"
+# Tasks
+  7501:
+    identifier: "questNewbieTask01"
+    default: "Greet someone! (Send a message.)"
+    locales:
+      english: "Greet someone! (Send a message.)"
+      deutsch: "Begrüße jemanden! (Sende eine Nachricht.)"
+      deutsch_be: "Begrüße jemanden! (Sende eine Nachricht.)"
+  7502:
+    identifier: "questNewbieTask02"
+    default: "Let's go back to the spawn! (Use \"/spawn\")"
+    locales:
+      english: "Let's go back to the spawn! (Use \"/spawn\")"
+      deutsch: "Lass uns zurück zum Spawn gehen! (Benutze \"/spawn\")"
+      deutsch_be: "Lass uns zurück zum Spawn gehen! (Benutze \"/spawn\")"
+  7503:
+    identifier: "questNewbieTask03"
+    default: "Visit Foxington! (Interact with the \"trade\" sign.)"
+    locales:
+      english: "Visit Foxington! (Interact with the \"trade\" sign.)"
+      deutsch: "Besuche Foxington! (Interagiere mit dem \"trade\"-Schild.)"
+      deutsch_be: "Besuche Foxington! (Interagiere mit dem \"trade\"-Schild.)"
+  7504:
+    identifier: "questNewbieTask04"
+    default: "Lunchtime! (Buy some sweet berries and bring them to the fox.)"
+    locales:
+      english: "Lunchtime! (Buy some sweet berries and bring them to the fox.)"
+      deutsch: "Mahlzeit! (Kaufe ein paar süße Beeren und bringe sie dem Fuchs.)"
+      deutsch_be: "Mahlzeit! (Kaufe ein paar süße Beeren und bringe sie dem Fuchs..)"
+  # Ask & Finish
+  7505:
+    identifier: "questNewbieAsk"
+    default: "What does the Fox say? Listen to him!"
+    locales:
+      english: "What does the Fox say? Listen to him!"
+      deutsch: "Was sagt der Fuchs? Höre ihm zu!"
+      deutsch_be: "Was sagt der Fuchs? Höre ihm zu!"
+  7506:
+    identifier: "questNewbieFinish"
+    default: "Congrats! You've solved your first Quest!"
+    locales:
+      english: "Congrats! You've solved your first Quest!"
+      deutsch: "Gratulation! Du hast deine erste Quest abgeschlossen!"
+      deutsch_be: "Gratulation! Du hast deine erste Quest abgeschlossen!"
+
+# First Task 00
+  7550:
+    identifier: "questNewbie01"
+    default: "Who are you? You must be new here!"
+    locales:
+      english: "Who are you? You must be new here!"
+      deutsch: "Wer bist du denn? Dich kenne ich ja gar nicht!"
+      deutsch_be: "Wer bist du denn? Dich kenne ich ja gar nicht!"
+  7551:
+    identifier: "questNewbie02"
+    default: "It's nice to meet you! I hope you're going to have a lot of fun!"
+    locales:
+      english: "It's nice to meet you! I hope you're going to have a lot of fun!"
+      deutsch: "Es ist nett dich kennen zu lernen! Ich hoffe du freust dich Foxcraft zu erkunden!"
+      deutsch_be: "Es ist nett dich kennen zu lernen! Ich hoffe du freust dich Foxcraft zu erkunden!"
+  7552:
+    identifier: "questNewbie03"
+    default: "You don't happen to have some berries with you, do you?"
+    locales:
+      english: "You don't happen to have some berries with you, do you?"
+      deutsch: "Du hast nicht zufällig ein paar Beeren bei dir, oder?"
+      deutsch_be: "Du hast nicht zufällig ein paar Beeren bei dir, oder?"
+  7553:
+    identifier: "questNewbie04"
+    default: "Anyway, don't be shy. Why don't you say \"Hi\" to the other players?"
+    locales:
+      english: "Anyway, don't be shy. Why don't you say \"Hi\" to the other players?"
+      deutsch: "Wie auch immer. Du brauchst nicht schüchten sein. Warum sagt du nicht mal \"Hi\" zu den anderen Spielern?"
+      deutsch_be: "Wie auch immer. Du brauchst nicht schüchten sein. Warum sagt du nicht mal \"Hi\" zu den anderen Spielern?"
+  7554:
+    identifier: "questNewbieRepeat"
+    default: "Hey, are you shy? Just say \"Hi\"."
+    locales:
+      english: "Hey, are you shy? Just say \"Hi\"."
+      deutsch: "Bist du etwa schüchtern? Sag einfach \"Hi\"."
+      deutsch_be: "Bist du etwa schüchtern? Sag einfach \"Hi\"."
+
+# First Chat Task 01
+  7660:
+    identifier: "questNewbieChat01"
+    default: "Great! I'm sure they'll be happy to get to know you more."
+    locales:
+      english: "Great! I'm sure they'll be happy to get to know you more."
+      deutsch: "Yay! Ich bin mir sicher ihr werdet gute Freunde!"
+      deutsch_be: "Yay! Ich bin mir sicher ihr werdet gute Freunde!"
+  7661:
+    identifier: "questNewbieChat02"
+    default: "So I'm sure it would come handy to always come back to spawn when you want."
+    locales:
+      english: "So I'm sure it would come handy to always come back to spawn when you want."
+      deutsch: "Ich bin mir sicher, dass es nützlich wäre, wenn du jederzeit zum Spawn zurückkehren könntest."
+      deutsch_be: "Yay! Ich bin mir sicher ihr werdet gute Freunde!"
+  7662:
+    identifier: "questNewbieChat03"
+    default: "I have good news for you then. You can by using the \"spawn\" command!"
+    locales:
+      english: "I have good news for you then. You can do so by using the \"\/spawn\" command."
+      deutsch: "Dann habe ich nämlich gute Nachrichten für dich! Du kannst das mit dem \"\/spawn\"-Befehl."
+      deutsch_be: "Dann habe ich nämlich gute Nachrichten für dich! Du kannst das mit dem \"\/spawn\"-Befehl."
+  7663:
+    identifier: "questNewbieChat04"
+    default: "Why don't you try it?"
+    locales:
+      english: "Why don't you try it?"
+      deutsch: "Warum versuchst du es nicht mal?"
+      deutsch_be: "Warum versuchst du es nicht mal?"
+
+# Spawn command Task 02
+  7670:
+    identifier: "questNewbieSpawn01"
+    default: "Welcome back to the spawn!"
+    locales:
+      english: "Welcome back to the spawn!"
+      deutsch: "Willkommen zurück am Spawn!"
+      deutsch_be: "Willkommen zurück am Spawn!"
+  7671:
+    identifier: "questNewbieSpawn02"
+    default: "Why don't we give my favorite place a little visit?"
+    locales:
+      english: "Why don't we give my favorite place a little visit?"
+      deutsch: "Warum tun wir meinen Lieblingsort keinen Besuch abstatten?"
+      deutsch_be: "Warum tun wir meinen Lieblingsort keinen Besuch abstatten?"
+  7672:
+    identifier: "questNewbieSpawn03"
+    default: "I'm talking about Foxington! The little town where you can trade some stuff!"
+    locales:
+      english: "I'm talking about Foxington! The little town where you can trade some stuff."
+      deutsch: "Ich rede natürlich über Foxington! Der kleinen Stadt wo du handel treiben kannst."
+      deutsch_be: "Ich rede natürlich über Foxington! Der kleinen Stadt wo du handel treiben kannst."
+  7673:
+    identifier: "questNewbieSpawn04"
+    default: "You just have to interact with the \"trade\" sign to go there."
+    locales:
+      english: "You just have to interact with the \"trade\" sign to go there."
+      deutsch: "Du musst nur mit dem \"trade\"-Schild interagieren."
+      deutsch_be: "Du musst nur mit dem \"trade\"-Schild interagieren."
+
+# Foxington Task 03
+  7680:
+    identifier: "questNewbieFoxington01"
+    default: "There we are! Welcome to Foxington!"
+    locales:
+      english: "There we are! Welcome to Foxington!"
+      deutsch: "Da sind wir! Willkommen in Foxington!"
+      deutsch_be: "Da sind wir! Willkommen in Foxington!"
+  7681:
+    identifier: "questNewbieFoxington02"
+    default: "*stomach growling*"
+    locales:
+      english: "*stomach growling*"
+      deutsch: "*Magenknurren*"
+      deutsch_be: "*Magenknurren*"
+  7682:
+    identifier: "questNewbieFoxington03"
+    default: "I'm pretty hungry! Why don't we give the Restaurant a visit and get some berries!"
+    locales:
+      english: "I'm pretty hungry! Why don't we give the Restaurant a visit and get some berries!"
+      deutsch: "Ich habe aber Kohledampf! Wieso schauen wir nicht im Resaturant vorbei und holen uns ein paar Beeren?"
+      deutsch_be: "Ich habe aber Kohledampf! Wieso schauen wir nicht im Resaturant vorbei und holen uns ein paar Beeren?"
+  7683:
+    identifier: "questNewbieFoxington04"
+    default: "You can find it's position on the map or on https://map.foxcraft.biz (Bedrock Player need to take it out of the chest.)"
+    locales:
+      english: "You can find it's position on the map or on https://map.foxcraft.biz (Bedrock Player need to take it out of the chest.)"
+      deutsch: "Du kannst das Restaurant über die Karte oder https://map.foxcraft.biz finden."
+      deutsch_be: "Du kannst das Restaurant über die Karten in der Truhe oder https://map.foxcraft.biz finden."
+  7684:
+    identifier: "FoxingtonMap"
+    default: "Map of Foxington"
+    locales:
+      english: "Map of Foxington"
+      deutsch: "Karte von Foxington"
+      deutsch_be: "Karte von Foxington"
+
+# Hungry Task 04
+  7690:
+    identifier: "questNewbieHungry01"
+    default: "Give me some! Give me some!"
+    locales:
+      english: "Give me some! Give me some!"
+      deutsch: "Gib mir welche! Na los!"
+      deutsch_be: "Gib mir welche! Na los!"
+  7691:
+    identifier: "questNewbieHungry02"
+    default: "What do you mean those were yours?"
+    locales:
+      english: "What do you mean those were yours?"
+      deutsch: "Was meinst du mit das waren deine?"
+      deutsch_be: "Was meinst du mit das waren deine?"
+  7692:
+    identifier: "questNewbieHungry03"
+    default: "I thought you bought them for me, didn't you?"
+    locales:
+      english: "I thought you bought them for me, didn't you?"
+      deutsch: "Ich dachte die hattest du für mich geholt, oder etwa nicht?"
+      deutsch_be: "Ich dachte die hattest du für mich geholt, oder etwa nicht?"
+  7693:
+    identifier: "questNewbieHungry04"
+    default: "Oops... Well, it's too late now... But I can give you something way better in return!"
+    locales:
+      english: "Oops... Well, it's too late now... But I can give you something way better in return!"
+      deutsch: "Ups... Naja, jetzt ist es sowieso zu spät... Aber ich kann dir was viel besseres im Austausch geben!"
+      deutsch_be: "Ups... Naja, jetzt ist es sowieso zu spät... Aber ich kann dir was viel besseres im Austausch geben!"
+  7694:
+    identifier: "questNewbieHungry0501"
+    default: "There you go! Have fun with your"
+    locales:
+      english: "There you go! Have fun with your"
+      deutsch: "Hier bitteschön! Viel Spaß mit deinem"
+      deutsch_be: "Hier bitteschön! Viel Spaß mit deinem"
+  7695:
+    identifier: "questNewbieHungry0502"
+    default: "VIP pass! It give you Sub Features for a whole week!"
+    locales:
+      english: "VIP pass! It give you Sub Features for a whole week!"
+      deutsch: "VIP-Pass! Er gibt dir Alle Abo-Vorteile für ganze 7 Tage!"
+      deutsch_be: "VIP-Pass! Er gibt dir Alle Abo-Vorteile für ganze 7 Tage!"
+  7696:
+    identifier: "questNewbieHungry06"
+    default: "I'll leave you alone now then. Have fun and I hope you'll bring me some berries sometimes."
+    locales:
+      english: "I'll leave you alone now then. Have fun and I hope you'll bring me some berries sometimes."
+      deutsch: "Ich lasse dich dann mal alleine. Viel Spaß noch auf Foxcraft und bring mir unbedingt mal ein paar Beeren vorbei."
+      deutsch_be: "Ich lasse dich dann mal alleine. Viel Spaß noch auf Foxcraft und bring mir unbedingt mal ein paar Beeren vorbei."
+  7697:
+    identifier: "questNewbieHungry07"
+    default: "See you later"
+    locales:
+      english: "See you later"
+      deutsch: "Bis später"
+      deutsch_be: "Bis später"
