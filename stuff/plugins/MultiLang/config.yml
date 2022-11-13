@@ -70,7 +70,7 @@ strings:
       deutsch_be: "Gelesen & Akzeptieren"
   3:
     identifier: "gdpr_read_message_01"
-    default: "I confirm that I've read and agree;"
+    default: "I confirm that I've read and agree"
     locales:
       english: "I confirm that I've read and agree"
       deutsch: "Ich bestätige die Nutzungsbedingungen"
@@ -112,11 +112,11 @@ strings:
       deutsch_be: "Ablehnen"
   9:
     identifier: "gdpr_kick"
-    default: "You didn't agree to the Terms of Service"
+    default: "You didn't agree to the Terms of Service!"
     locales:
-      english: "You didn't agree to the Terms of Service"
-      deutsch: "Du hast die Nutzungsbedingungen nicht akzeptiert."
-      deutsch_be: "Du hast die Nutzungsbedingungen nicht akzeptiert."
+      english: "You didn't agree to the Terms of Service!"
+      deutsch: "Du hast die Nutzungsbedingungen nicht akzeptiert!"
+      deutsch_be: "Du hast die Nutzungsbedingungen nicht akzeptiert!"
   10:
     identifier: "gdpr_deny_message"
     default: "You will be kicked from the server."
