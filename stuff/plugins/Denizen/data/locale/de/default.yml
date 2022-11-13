@@ -1,0 +1,42 @@
+# Stuff that fits at multiple places.
+general:
+    language: Sprache
+
+# TOS Stuff
+tos:
+    title: Nutzungsbedingungen
+    read:
+        name: Gelesen & Akzeptieren
+        msg:
+        - Ich bestätige die Nutzungsbedingungen
+        - gelesen zu haben und mindestens 16 Jahre alt
+        - oder 13 Jahre alt zu sein mit Erlaubnis
+        - meiner Erziehungsberechtigten.
+    link: Die Nutzungsbedingungen findest du unter
+    deny: 
+        name: Ablehnen
+        msg: Du wirst vom Server gekickt!
+    kick: Du hast die Nutzungsbedingungen nicht akzeptiert!
+
+# Welcome Message
+welcome:
+    title:
+        name: §eWillkommen auf §6Foxcraft§e!
+        sub: §9Wir hoffen du wirst Spaß haben,
+    msg:
+    - §eWillkommen auf Foxcraft 2.0,
+    - §eDas Foxcraft Team wünscht dir viel Spaß beim Erkunden & spielen mit anderen oder alleine.
+    - §eFalls du Hilfe brauchst schaue doch im §3Wiki §eauf §ahttps://wiki.foxcraft.biz §e vorbei oder kontiere uns über §9Discord §e| §ahttps://spikey.biz/discord
+    - §eUnd nicht wundern, dass du hier nichts abbauen oder bauen kannst. Dies liegt daran, dass du in den Spawnchunks stehst.
+    - §eAuf §ahttps://map.foxcraft.biz §ekannst du sehen wo sich jeder befindet und natürlich auch wo die Spawnchunks enden.
+    - §eViel Spaß!
+
+# NPC STUFF
+npc:
+    mascot:
+        name: Spikeys Helfer
+        greeting:
+            first: Du musst neu sein! Willkommen
+            again: Willkommen am Spawn,
+        farewell: Bye,
+    

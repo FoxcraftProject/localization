@@ -1,0 +1,42 @@
+# Stuff that fits at multiple places.
+general:
+    language: language
+
+# TOS Stuff
+tos:
+    title: Terms of Services
+    read: Read & Accepted
+    msg:
+    - I confirm that I've read and agree
+    - to the terms of service and
+    - that I am at least 16 years old
+    - or 13 years old with my guardian's permission.
+    link: You can find the privacy policy at
+    deny:
+        name: Decline
+        msg: You will be kicked from the server.
+    kick: You didn't agree to the Terms of Service!
+
+# Welcome Message
+welcome:
+    title:
+        name: §eWelcome to §6Foxcraft§e
+        sub: §9Hope you'll enjoy your time,
+    msg:
+    - §eWelcome to Foxcraft 2.0,
+    - §eThe Foxcraft Team hopes that you'll enjoy playing together or alone on this Server.
+    - §eIf you need any help check the §3Wiki §eat §ahttps://wiki.foxcraft.biz §eor contact us via §9Discord §e| §ahttps://spikey.biz/discord
+    - §eAnd don't worry that you can't build or mine here. That's because you're standing in the Spawnchunks.
+    - §eOn §ahttps://map.foxcraft.biz §eyou can see where you and other players are and of yourse where the Spawnchunks end.
+    - §eHave fun!
+
+# NPC STUFF
+npc:
+    # The Fox at the Spawn
+    mascot:
+        name: Spikey's Helper
+        greeting:
+            first: You must be new! Welcome,
+            again: Welcome at the Spawn,
+        farewell: Bye,
+    
